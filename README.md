@@ -12,7 +12,7 @@ When a language model suggests a fix for buggy Python code, can a calibrated con
 
 - Benchmark: 25,097 buggy/fixed Python code pairs from several sources, split into 20,077 training, 2,510 validation and 2,510 test rows.
 - Models: 13 open models from six families (Qwen, Gemma, Phi, DeepSeek, Llama and StarCoder2).
-- Training: QLoRA fine-tuning, one run per model.
+- Training: QLoRA fine-tuning of the open models.
 - Retrieval: FAISS, used for retrieval-augmented repair.
 - Evaluation: a hidden-test evaluation that runs every generated fix.
 
